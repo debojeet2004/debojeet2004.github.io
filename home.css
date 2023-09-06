@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* overflow-y: initial; */
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* navigation */
+.nav_bar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20vw;
+    padding: 2vw 0px 1vw 3vw;
+    font-size: 1.2vw;
+}
+
+.logo{
+    font-family:  'Poppins',sans-serif; 
+    font-weight: 300;
+    /* text-transform: uppercase; */
+}
+
+.tag_bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5vw;
+    font-size: 1vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* border: 1px solid black !important; */
+    /* text-decoration: none; */
+}
+.tags a {
+    text-decoration: none ;
+    color: black;
+}
+
+.tags a h4 {
+    color: black;
+} 
+
+
+
+.img{
+    background-image: url(./resources/LOGO\ 1.svg);
+    width: 22vw;
+    height: 22vw;
+    background-size: contain;
+    z-index: -1;
+    top: -5.3vw;
+    left: -9vw;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1.5vw;
+    /* border: 1px solid black; */
+    
+}
+
+.toggle {
+    width: 4vw;
+    height: 2vw;
+    background-color: #9b9b9b;
+    border-radius: 1vw;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.toggle:before {
+    content: '';
+    /* border: 1px solid black; */
+    width: 2vw;
+    height: 2vw;
+    background-color: #FFDE59;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked + .toggle:before {
+    transform: translateX(2vw);
+    background-color: #fffcfc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body_content{
+    height: 100vh;
+}
+
+/* name bar  */
+.name_box {
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 50vw;
+    position: relative;
+    font-family: 'Oxygen', sans-serif;
+    left: 8vw;
+    top: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.name{
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+    line-height: 1.2;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+#fn {
+    justify-content: flex-start;
+    font-size: 2.5vw;
+}
+
+#ln {
+    justify-content: flex-end;
+    font-size: 2.5vw;
+}
+
+.bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: .6vw;
+    line-height: 4;
+    font-size: 1.5vw;
+    opacity: .6;
+    /* border: 3px solid black ; */
+    
+}
+
+.rectangle{
+    background-color: black;
+    height: 5px;
+    width: 20vw;
+}
+
+.snd_box{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    
+}
+
+.fst_box{
+    margin-right: 1.4vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.circle{
+    background-color: #FFDE59;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -99;
+    right: 17vw;
+    top: .6vw;
+}
+
+
+/* lets connect */
+
+.connect{
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    /* text-transform: uppercase; */
+    /* border: 1px solid black ; */
+    width: fit-content;
+    position: absolute;
+    left: 8.5vw;
+    top: 43.5vw;
+    z-index: 5;
+    font-size: 2vw;
+    color: black;
+    
+}
+.connect i {
+    padding: 1.5% 0px 0px 0px;
+}
+
+/* body elements  */
+
+.box-rectangle{
+    background-image: url(./resources/LOGO\ 2\ black-box\ 1.svg);
+    width: 40vw;
+    height: 40vw;
+    background-size: contain;
+    z-index: -1;
+    right: -12vw;
+    top:-8vw;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.circle1 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width: 4vw; 
+    height: 4vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: 1vw;
+    top: 12vw;
+}
+
+.circle2 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width: 4vw; 
+    height: 4vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: 38vw;
+    top: 10vw;
+}
+.circle3 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 30vw; 
+    height: 30vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: -12vw;
+    top: 40vw;
+}
+.circle4 {
+    background-color: rgb(47, 46, 45) ;
+    /* border: 1px solid black ; */
+    width : 15vw; 
+    height: 15vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: 12vw;
+    top: 48vw;
+}
+
+.circle5 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 9vw; 
+    height: 9vw;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    right: 25vw;
+    top: 48vw;
+}
+
+.circle6 {
+    background-color: rgb(47, 47, 45) ;
+    /* border: 1px solid black ; */
+    width : 9vw; 
+    height: 9vw;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    right: -5vw;
+    top: 35vw;
+}
+.circle7{
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 7vw; 
+    height: 7vw;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 5.8vw;
+    top: 41.3vw;
+}
+
+.black_circle {
+    background-color: rgb(32, 30, 14) ;
+    /* border: 5px solid rgb(255, 136, 0) ; */
+    width: 4vw; 
+    height: 4vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: 37vw;
+    top: 34vw;
+}
+
+.big_circle {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width: 30vw; 
+    height: 30vw;
+    z-index: -5;
+    border-radius: 50%;
+    position: absolute;
+    right: 6vw;
+    top: 10vw;
+}
+
+
+.yello_boxes{
+    background-image: url(./resources/yello\ box.svg);
+    width: 30vw;
+    height: 30vw;
+    background-size: contain;
+    z-index: -1;
+    right: 28vw;
+    top: 35vw;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.dots{
+    background-image: url(./resources/dots.png);
+    position: absolute ;
+    width: 30vw;
+    height: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 6;
+    left: -18vw;
+    top: 22vw;
+}
+
+.my_img{
+    background-image: url(./resources/me.png);
+    width: 42vw;
+    height: 42vw;
+    background-size: contain;
+    z-index: -1;
+    right: -1vw;
+    top: 9vw;
+    background-repeat: no-repeat;
+    position: absolute;
+}

@@ -1,0 +1,23 @@
+/* styles.css */
+/* Add these styles for dark mode */
+.dark-mode  {
+    background-color: black !important;
+    color: #fff !important;
+
+}
+
+.dark-mode a {
+    text-decoration: none ;
+    color: #fff;
+}
+
+.dark-mode a .fa-arrow-right-long{
+    color: #fff !important;
+}
+.dark-mode a h4{
+    color: #fff;
+}
+
+.dark-mode .rectangle{
+    background-color:white;
+}
