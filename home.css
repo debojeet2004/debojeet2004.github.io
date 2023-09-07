@@ -17,7 +17,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 20vw;
+    gap: 15%;
     padding: 2vw 0px 1vw 3vw;
     font-size: 1.2vw;
 }
@@ -25,8 +25,13 @@
 .logo{
     font-family:  'Poppins',sans-serif; 
     font-weight: 300;
+    font-size: 1.6vw;
     /* text-transform: uppercase; */
+    width: 15vw;
+    /* border: 1px solid black; */
 }
+
+
 
 .tag_bar{
     display: flex;
@@ -37,6 +42,7 @@
     font-weight: 100;
     text-transform: uppercase;
     font-family: 'Oxygen', sans-serif;
+    /* font-family:  'Poppins',sans-serif;  */
     font-weight: 700;
     letter-spacing: 2px;
     /* border: 1px solid black !important; */
@@ -53,7 +59,7 @@
 
 
 
-.img{
+.img1{
     background-image: url(./resources/LOGO\ 1.svg);
     width: 22vw;
     height: 22vw;
@@ -107,19 +113,10 @@ input[type="checkbox"]:checked + .toggle:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .body_content{
-    height: 100vh;
+    height:70vw;
+    /* background-color: aquamarine; */
+    /* position: relative; */
 }
 
 /* name bar  */
@@ -128,7 +125,8 @@ input[type="checkbox"]:checked + .toggle:before {
     padding: 10px;
     width: 50vw;
     position: relative;
-    font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family:  'Poppins',sans-serif; 
     left: 8vw;
     top: 12vw;
     display: flex;
@@ -165,6 +163,7 @@ input[type="checkbox"]:checked + .toggle:before {
     line-height: 4;
     font-size: 1.5vw;
     opacity: .6;
+    font-family:  'Poppins',sans-serif; 
     /* border: 3px solid black ; */
     
 }
@@ -194,12 +193,13 @@ input[type="checkbox"]:checked + .toggle:before {
 
 .circle{
     background-color: #FFDE59;
+    /* border: 1px solid black; */
     width: 3vw;
     height: 3vw;
     border-radius: 50%;
     position: absolute;
     z-index: -99;
-    right: 17vw;
+    right: 19vw;
     top: .6vw;
 }
 
@@ -208,6 +208,7 @@ input[type="checkbox"]:checked + .toggle:before {
 
 .connect{
     font-family: 'Oxygen', sans-serif;
+    /* font-family:  'Poppins',sans-serif;  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,7 +324,7 @@ input[type="checkbox"]:checked + .toggle:before {
 }
 
 .black_circle {
-    background-color: rgb(32, 30, 14) ;
+    background-color: rgb(67, 67, 64) ;
     /* border: 5px solid rgb(255, 136, 0) ; */
     width: 4vw; 
     height: 4vw;
@@ -381,4 +382,142 @@ input[type="checkbox"]:checked + .toggle:before {
     top: 9vw;
     background-repeat: no-repeat;
     position: absolute;
+}
+
+
+
+/* ABOUT SECTION */
+.about_section{
+    font-family: 'Oxygen', sans-serif;
+
+    /* background-color: aqua; */
+    height: 57svw;
+    /* margin-top: 18vw; */
+    position: relative;
+}
+/* .about_section .img2{
+    background-image: url(./resources/me.png);
+    height: 5vw;
+    width: 2vw;
+    position: absolute;
+    z-index: 5;
+} */
+
+.content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 10vw;
+    top: 17vw;
+    gap: 1vw;
+    width: 35vw;
+    /* border: 5px solid black; */
+    /* background-color: #FFDE59; */
+    z-index: 10;
+}
+.about_section .heading{
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    font-size: 2.4vw;
+    letter-spacing: .4vw;
+    color: transparent ;
+    color: rgba(128, 128, 128, 0.578);
+    /* -webkit-text-stroke-width: 2px; */
+    /* -webkit-text-stroke-color: rgb(73, 73, 73); */
+}
+
+.about_section .sub_content{
+    text-align: justify;
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.img2{
+    background-image: url(./resources/golgol.png);
+    width: 50vw;
+    height: 50vw;
+    background-size: contain;
+    left: -15vw;
+    top: 4vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 10;
+}
+.profile_image{
+    background-image: url(./resources/my\ img.jpeg);
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    background-position: top ;
+    left: 26vw;
+    top: 18vw;
+    border-top : 8px solid #2E2E2E;
+    border-bottom : 8px solid #FFDE59;
+    border-left:8px solid #FFDE59 ;
+    border-right:8px solid #2E2E2E ;
+    /* border: .6vw solid #2E2E2E; */
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.circle8 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 30vw; 
+    height: 30vw;
+    z-index: 5;
+    border-radius: 50%;
+    position: absolute;
+    left: -12vw;
+    /* top: .5vw; */
+}
+
+.circle9 {
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 30vw; 
+    height: 30vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    right: -10vw;
+    top: 26vw;
+}
+
+.circle10{
+    background-color: #2E2E2E;
+    /* border: 1px solid black ; */
+    width : 14vw; 
+    height: 14vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    left: 35vw;
+    top: 12vw;
+}
+.circle11{
+    background-color: #2E2E2E;
+    /* border: 1px solid black ; */
+    width : 14vw; 
+    height: 14vw;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    left: 35vw;
+    top: 12vw;
+}
+.circle12{
+    background-color: #FFDE59;
+    /* border: 1px solid black ; */
+    width : 10vw; 
+    height: 10vw;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 24vw;
+    top: 32vw;
 }
