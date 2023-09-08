@@ -21,3 +21,8 @@
 .dark-mode .rectangle{
     background-color:white;
 }
+
+.dark-mode .about_section .content .heading {
+    -webkit-text-stroke-width: .2vw;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.486);
+}
