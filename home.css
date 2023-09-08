@@ -114,7 +114,7 @@ input[type="checkbox"]:checked + .toggle:before {
 
 
 .body_content{
-    height:70vw;
+    height:63vw;
     /* background-color: aquamarine; */
     /* position: relative; */
 }
@@ -418,14 +418,16 @@ input[type="checkbox"]:checked + .toggle:before {
     z-index: 10;
 }
 .about_section .heading{
+    font-family:  sans-serif;
     text-transform: uppercase;
     /* text-decoration: underline; */
-    font-size: 2.4vw;
+    font-size: 3vw;
     letter-spacing: .4vw;
     color: transparent ;
-    color: rgba(128, 128, 128, 0.578);
-    /* -webkit-text-stroke-width: 2px; */
-    /* -webkit-text-stroke-color: rgb(73, 73, 73); */
+    font-weight: 900;
+    /* color: rgba(128, 128, 128, 0.578); */
+    -webkit-text-stroke-width: .2vw;
+    -webkit-text-stroke-color: rgba(112, 112, 112, 0.523);
 }
 
 .about_section .sub_content{
@@ -446,23 +448,15 @@ input[type="checkbox"]:checked + .toggle:before {
     z-index: 10;
 }
 .profile_image{
-    background-image: url(./resources/my\ img.jpeg);
-    width: 20vw;
-    height: 20vw;
-    background-size: cover;
-    background-position: top ;
-    left: 26vw;
-    top: 18vw;
-    border-top : 8px solid #2E2E2E;
-    border-bottom : 8px solid #FFDE59;
-    border-left:8px solid #FFDE59 ;
-    border-right:8px solid #2E2E2E ;
-    /* border: .6vw solid #2E2E2E; */
+    background-image: url(./resources/illastration.svg);
+    width: 28vw;
+    height: 25vw;
+    background-size: contain;
+    left: 24vw;
+    top: 12vw;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 3;
-    object-fit: cover;
-    border-radius: 50%;
 }
 .circle8 {
     background-color: #FFDE59;
@@ -477,8 +471,8 @@ input[type="checkbox"]:checked + .toggle:before {
 }
 
 .circle9 {
-    background-color: #FFDE59;
-    /* border: 1px solid black ; */
+    background-color: transparent;
+    border: 4vw solid #FFDE59 ;
     width : 30vw; 
     height: 30vw;
     z-index: 2;
@@ -489,27 +483,17 @@ input[type="checkbox"]:checked + .toggle:before {
 }
 
 .circle10{
-    background-color: #2E2E2E;
-    /* border: 1px solid black ; */
-    width : 14vw; 
-    height: 14vw;
+    background-color: #312d1d;
+    /* border: 5px solid yellow  ; */
+    width : 18vw; 
+    height: 18vw;
     z-index: 2;
     border-radius: 50%;
     position: absolute;
-    left: 35vw;
-    top: 12vw;
+    right: -4vw;
+    top: 32vw;
 }
-.circle11{
-    background-color: #2E2E2E;
-    /* border: 1px solid black ; */
-    width : 14vw; 
-    height: 14vw;
-    z-index: 2;
-    border-radius: 50%;
-    position: absolute;
-    left: 35vw;
-    top: 12vw;
-}
+
 .circle12{
     background-color: #FFDE59;
     /* border: 1px solid black ; */
