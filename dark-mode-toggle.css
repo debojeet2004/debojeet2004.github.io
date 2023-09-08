@@ -32,3 +32,6 @@
     color: rgb(99, 99, 99);
     letter-spacing: 0;
 }
+.dark-mode .exp_section .content_layer .main_box .boder_box{
+    background-color: black;
+}
