@@ -412,27 +412,44 @@ input[type="checkbox"]:checked + .toggle:before {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    right: 15vw;
-    top: 14.5vw;
-    gap: 2vw;
-    width: 32vw;
-    /* border: 5px solid black; */
+    right: 13vw;
+    top: 13vw;
+    gap: 1vw;
+    width: 35vw;
+    /* border: 3px solid black; */
     /* background-color: #FFDE59; */
     z-index: 10;
     
 }
 .about_section .heading{
     font-family:  sans-serif;
-    text-transform: uppercase;
-    /* text-decoration: underline; */
-    font-size: 3vw;
-    letter-spacing: .4vw;
-    color: transparent ;
-    font-weight: 900;
-    /* color: rgba(128, 128, 128, 0.578); */
-    -webkit-text-stroke-width: .2vw;
-    -webkit-text-stroke-color: rgba(112, 112, 112, 0.523);
+    display: flex;
+    flex-direction: column;
+    gap: .8vw;
+    /* -webkit-text-stroke-width: .2vw;
+    -webkit-text-stroke-color: rgba(112, 112, 112, 0.523); */
 }
+
+.about_section .heading h3{
+    font-size: 3vw;
+    /* text-transform: uppercase; */
+    color: black ;
+}
+.about_section .heading h3 span{
+    color: #f9cf26;
+    text-transform: uppercase;
+    
+}
+.about_section .heading h5{
+    font-size: 1vw;
+    text-transform: uppercase;
+    letter-spacing: .4vw;
+    color: black ;
+}
+.about_section .heading h5 span {
+    letter-spacing: 0;
+}
+
 
 .about_section .sub_content{
     text-align: justify;

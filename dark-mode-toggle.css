@@ -22,7 +22,13 @@
     background-color:white;
 }
 
-.dark-mode .about_section .content .heading {
-    -webkit-text-stroke-width: .2vw;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.486);
+.dark-mode .about_section .content .heading h3 {
+    color: white;
+}
+.dark-mode .about_section .content .heading h5 {
+    color: rgba(255, 255, 255, 0.423);
+}
+.dark-mode .about_section .content .heading h5 span {
+    color: rgb(99, 99, 99);
+    letter-spacing: 0;
 }
