@@ -35,3 +35,15 @@
 .dark-mode .exp_section .content_layer .main_box .boder_box{
     background-color: black;
 }
+.dark-mode .exp_section .content_layer .main_box .content_box h4 {
+    color: black;
+}
+.dark-mode .exp_section .content_layer .main_box .content_box h5 {
+    color: black;
+}
+.dark-mode .exp_section .content_layer .main_box .content_box h2 {
+    color: black;
+}
+.dark-mode .exp_section .content_layer .main_box .content_box .button_box a {
+    color: black;
+}

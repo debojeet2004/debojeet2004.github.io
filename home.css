@@ -395,8 +395,9 @@ input[type="checkbox"]:checked + .toggle:before {
 
 /* ABOUT SECTION */
 .about_section{
+    width: 100vw;
     font-family: 'Oxygen', sans-serif;
-    overflow-x: visible;
+    /* overflow-x: visible !important; */
     /* background-color: aqua; */
     height: 57vw;
     /* width: 1w; */
@@ -532,18 +533,21 @@ input[type="checkbox"]:checked + .toggle:before {
     top: 32vw;
 }
 
+
+/* EXPERIENCE AND EDUCATION SECTION */
 .exp_section{
     font-family: 'Oxygen', sans-serif;
-    /* border: 2px solid black; */
+    /* border: 1px solid rgb(232, 4, 4); */
     /* background-color: antiquewhite; */
     /* display: grid; */
     position: relative;
     display: flex;
-    gap: 10vw;
+    gap: 8vw;
     flex-direction: column;
     justify-content: top;
     align-items: left   ;
-    height: 65vw;
+    height: 72vw;
+    /* overflow-y: hidden; */
 
 }
 .header_section{
@@ -556,12 +560,14 @@ input[type="checkbox"]:checked + .toggle:before {
     border-bottom: .5vw solid #FFDE59 ;
     flex-direction: column;
     gap: .5vw;
-    margin: 1vw 0px 0px 5vw;
+    margin: 2vw 0px 0px 5vw;
 }
 .header_section h5{
     /* border: 2px solid rgb(9, 255, 21); */
     text-transform: uppercase;
     font-size: 1.6vw;
+    color: #FFDE59;
+
 }
 
 .header_section h2{
@@ -574,13 +580,34 @@ input[type="checkbox"]:checked + .toggle:before {
 .header_section h2 span{
     font-size: 2.4vw;
 }
+.cv_button{
+    position: absolute;
+    font-size: 1.5vw;
+    /* text-align: center; */
+    
+    width: 10vw;
+    height: 4vw;
+    border-radius: .5vw;
+    background-color: orange;
+    right: 15vw;
+    top: 4vw;
+}
+.cv_button a {
+    text-decoration: none;
+    color: #fffcfc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* content layer */
 .content_layer{
     /* border: 2px solid black; */
     /* background-color: bisque; */
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 40vw);
     row-gap: 4vw;
     column-gap: -2vw;
     width: 100%;
@@ -591,7 +618,8 @@ input[type="checkbox"]:checked + .toggle:before {
     overflow-x: visible !important;
     /* border: 2px solid rgb(255, 255, 255); */
     border-radius: 1.2vw;
-    background-color: #f9cf26;
+    /* background-color: #f9cf26; */
+    background: linear-gradient( rgb(255, 179, 0) , rgb(255, 251, 8)) ;
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -604,11 +632,11 @@ input[type="checkbox"]:checked + .toggle:before {
     height: 12vw;
     display: flex;
     align-items: end;
-    justify-content: top;
-    padding: 2vw 2vw 0 0;
+    justify-content: space-evenly;
+    padding: .5vw 2vw 0 0;
     flex-direction: column;
     text-align: right;
-    gap: .5vw;
+    /* gap: .5vw; */
     font-family: 'Oxygen', sans-serif;
     /* background-color: #f9cf26; */
 }
@@ -633,7 +661,7 @@ input[type="checkbox"]:checked + .toggle:before {
     /* text-align: right; */
     font-size: .7vw;
     text-transform: uppercase;
-    padding-right: 1vw;
+    padding-right: .2vw;
     letter-spacing: .1vw;
 }
 .content_box h5 {
@@ -646,6 +674,29 @@ input[type="checkbox"]:checked + .toggle:before {
     /* text-transform: uppercase; */
 }
 
+.content_box .button_box{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-transform: uppercase;
+    
+    height: 2vw;
+    width: 6vw ;
+    border-radius: 2vw;
+    font-size: .7vw;
+    background: linear-gradient(rgb(254, 131, 0), rgb(255, 200, 0)) ;
+}
+.content_box .button_box a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white ;
+    /* width: 100%;
+    height: 100%; */
+}
 .boder_box {
     width: 9vw;
     height: 9vw;
@@ -670,8 +721,28 @@ input[type="checkbox"]:checked + .toggle:before {
     width: 30vw;
     height: 30vw;
     border-radius: 50%;
-    background-color: #312d1d;
+    background-color: rgb(47, 46, 45);
     z-index: -1;
     top: 28vw;
     left: -10vw;
+}
+
+.img3{
+    background-image: url(./resources/LOGO\ 1.svg);
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background-size: contain;
+    z-index: -1;
+    top: 42vw;
+    left: 2vw;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* workspace_section */
+
+.workspace_section{
+    
 }
