@@ -521,17 +521,7 @@ input[type="checkbox"]:checked + .toggle:before {
     top: 32vw;
 }
 
-.circle12{
-    background-color: #FFDE59;
-    /* border: 1px solid black ; */
-    width : 10vw; 
-    height: 10vw;
-    z-index: 1;
-    border-radius: 50%;
-    position: absolute;
-    left: 24vw;
-    top: 32vw;
-}
+
 
 
 /* EXPERIENCE AND EDUCATION SECTION */
@@ -744,5 +734,16 @@ input[type="checkbox"]:checked + .toggle:before {
 /* workspace_section */
 
 .workspace_section{
-    
+
 }
+/* .circle12{
+    background-color: #FFDE59;
+    border: 1px solid black ;
+    width : 10vw; 
+    height: 10vw;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 24vw;
+    top: 32vw;
+} */
