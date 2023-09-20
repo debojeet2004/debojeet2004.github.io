@@ -737,7 +737,7 @@ input[type="checkbox"]:checked + .toggle:before {
 .workspace_section{
 font-family: 'Oxygen', sans-serif;
 position: relative;
-height: 60vw;
+height: 71.8vw;
 /* background-color: beige; */
 display: flex;
 align-items: end;
@@ -745,6 +745,7 @@ justify-content: top;
 gap: 5vw;
 flex-direction: column;
 padding: 4vw 5vw 0 5vw;
+overflow-x: visible;
 }
 .head{
     display: flex;
@@ -771,7 +772,7 @@ padding: 4vw 5vw 0 5vw;
     text-transform: uppercase;
     letter-spacing: .2vw;
     font-size: 2vw;
-    color: #FFDE59;
+    color: #ff3a3a;
 }
 .head3{
     text-transform: uppercase;
@@ -779,109 +780,141 @@ padding: 4vw 5vw 0 5vw;
     font-size: 2vw;
 }
 
-/* .circle12{
-    background-color: #FFDE59;
-    border: 1px solid black ;
-    width : 10vw; 
-    height: 10vw;
-    z-index: 1;
-    border-radius: 50%;
-    position: absolute;
-    left: 24vw;
-    top: 32vw;
-} */
 
 
 .container{
-    position: relative;
-    width: 100%;
-    height: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    flex-wrap: wrap;
-    padding: 2vw;
-    /* background-color: #9b9b9b; */
-    /* overflow-x: visible; */
-
+        width: 100%;
+        height: 30vw;
+        /* background-color: #9b9b9b; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        /* overflow-y: visible; */
 }
 
-.container .card {
+
+.maincardbox{
     position: relative;
-    width: 20vw;
-    height: 20vw;
-    cursor: pointer;
-    /* border: 2px solid black; */
+    height: 18vw;
+    width: 18vw;
+    background: linear-gradient( rgb(254, 234, 123),rgb(255, 187, 0)  ) ;
     border-radius: 1vw;
-    background: linear-gradient(rgb(254, 131, 0), rgb(255, 200, 0)) ;
-    
-    /* padding: 2vw; */
     display: flex;
-    align-items: center;
-    justify-content: top;
     flex-direction: column;
-    overflow-x: visible;
-    transition: .03s ease-in-out;
+    align-items: center;
+    justify-content: top  ;
+    overflow-x: visible ;
+    transition: .3s ease;
 }
 
-.container .card:hover {
-    height: 22vw;
-    transition: .03s ease-in-out;
-}
-
-
-.container .card .imgbx{
+.upperpart{
     position: relative;
-    width: 17vw;
-    text-align: center;
+    height: 14vw;
+    width: 14vw;
     /* border: 2px solid black; */
-    top: -2vw;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 3vw;
+    overflow-x: visible;
 }
-.container .card .imgbx img{
+
+.image{
+    height: 10vw;
+    width: 14vw;
+    background-color: black ;
+    /* border: 2px solid black; */
+    /* background: url(./resources/uiux.jpg); */
+    background-size: cover;
     border-radius: 1vw;
-
+    margin-top: -2vw;
+    z-index: 5;
+}
+#ig1{
+    background: url(./resources/web-dev-girl.svg);
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+}
+#ig2{
+    background: url(./resources/ui-ux-designer.svg);
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+#ig3{
+    background: url(./resources/graphic-designer.svg);
+    background-color: black ;
+    background-size: cover;
+}
+#ig4{
+    background: url(./resources/codingguy.svg);
+    background-color: black ;
+    background-size: cover;
+}
+.sub-heading{
+    position: relative;
+    text-align: center;
+    width: 14vw;
+    /* border: 2px solid black; */
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    transition: .3s ease;
 }
 
-.card .text-box{
+.lowerpart{
     position: relative;
-    text-align:center;
-    font-size: .8vw;
-    /* border: 2px solid black ; */
-    width: 17vw;
-    padding: .5vw 1vw;
-    margin-top: -12vw;
-    /* padding-top: 2vw; */
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 1vw;
+    padding: 1vw;
+    top: -10vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
 
+.maincardbox:hover{
+    height: 20vw;
+}
+
+.maincardbox:hover .sub-heading{
     visibility: hidden;
     opacity: 0;
-    transition:  .3s ease-in-out;
 }
 
 
-.container .card:hover .text-box{
+.maincardbox:hover .lowerpart{
     visibility: visible;
     opacity: 1;
-    margin-top: -1vw;
-    /* padding-top: 2vw; */
-    font-size: .8vw;
-    transition-delay: 0;
-    /* border: 2px solid black !important; */
+    top: -3vw;
 }
 
-.subhead{
-    text-transform: uppercase;
-    visibility: visible;
-    font-size: 1.5vw;
+
+
+
+
+
+
+
+.circle12{
+    /* background-color: #FFDE59; */
+    border: 4.5vw solid #fed400 ;
+    width : 30vw; 
+    height: 30vw;
+    z-index: ;
+    border-radius: 50%;
+    position: absolute;
+    left: -8vw;
+    top: 35vw;
 }
 
-.container .card:hover .subhead{
-    visibility: hidden;
-    margin-top: -5vw;
-    opacity: 0;
-    transition-delay: .05s;
+.img4{
+    position: absolute;
+    background: url(./resources/yello\ box.svg);
+    z-index: -1;
+    width : 38vw; 
+    height: 38vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -12vw;
+    top: 2vw;
 }
