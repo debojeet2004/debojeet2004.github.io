@@ -60,3 +60,10 @@
 .dark-mode .workspace_section .container .maincardbox .upperpart #ig4 {
     background-color: rgb(255, 255, 255);
 }
+
+.dark-mode .exp_section .tab_container .tab_button{
+    color: white;
+}
+.dark-mode .exp_section .tab_container .tab_button.active {
+    color: rgb(0, 0, 0);
+}
