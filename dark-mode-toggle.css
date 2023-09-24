@@ -67,3 +67,70 @@
 .dark-mode .exp_section .tab_container .tab_button.active {
     color: rgb(0, 0, 0);
 }
+
+
+.dark-mode .lets_connect_section .right_section .box {
+    border-color: white;
+}
+.dark-mode .lets_connect_section .right_section .box:hover {
+    border-color: #f3d971;
+    background-color: #f9cf2650;
+}
+
+.dark-mode .lets_connect_section .right_section .box .inputbox input {
+    border: .3vw solid white;
+    color: white;
+}
+.dark-mode .lets_connect_section .right_section .box .inputbox span {
+    
+    color: white;
+}
+
+.dark-mode .lets_connect_section .right_section .box .inputbox input:hover {
+    border: .3vw solid #f3d971;
+}
+.dark-mode .lets_connect_section .right_section .box .inputbox input:valid ~ span,
+.inputbox input:focus ~ span 
+{
+    color: rgb(0, 0, 0) !important;
+    border-left: .15vw solid rgb(255, 218, 7);
+    border-right: .15vw solid rgb(255, 218, 7);
+    background-color: rgb(255, 218, 7) ;
+}
+
+
+.dark-mode .lets_connect_section .right_section .box 
+.inputbox:nth-child(2) input:focus ~ span,
+.inputbox:nth-child(2) input:valid ~ span
+{
+    background-color: rgb(255, 218, 7) ;
+    color: #000000 ;
+    padding-top :.2vw;
+}
+
+
+.dark-mode .lets_connect_section .right_section .box .inputbox input:valid ,.inputbox input:focus{
+    border: .3vw solid rgb(255, 218, 7) !important ; 
+}
+
+
+.dark-mode .lets_connect_section .right_section .box  .send-button {
+    border: .28vw solid white;
+    color: white;
+}
+.dark-mode .lets_connect_section .right_section .box  .send-button:hover {
+    border: .28vw  solid rgb(255, 218, 7);
+    color:  rgb(255, 218, 7);
+}
+.dark-mode .lets_connect_section .right_section .box  .send-button:hover a {
+    color:  rgb(255, 218, 7);
+}
+.dark-mode .lets_connect_section .right_section .box  .send-button:active {
+    border: .28vw  solid rgb(255, 218, 7);
+    color:  rgb(255, 218, 7);
+    color: black;
+}
+.dark-mode .lets_connect_section .right_section .box  .send-button:active a{
+    color:  rgb(255, 218, 7);
+    color: black;
+}

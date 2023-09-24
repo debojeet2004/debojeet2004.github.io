@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
 
 }
 
@@ -966,4 +967,179 @@ overflow-x: visible;
     background-repeat: no-repeat;
     right: -12vw;
     top: 2vw;
+}
+
+
+
+/* LETS CONNECT SECTION */
+
+
+
+.lets_connect_section{
+    display: flex;
+    /* align-items: baseline !important; */
+    justify-content: space-between;
+    height: 50vw;
+    /* background-color: antiquewhite; */
+    font-family: 'Oxygen', sans-serif;
+}
+.left_section{
+    height: 100%;
+    /* border: .4vw solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5vw;
+}
+.title_section{
+    /* border: .2vw solid rgb(255, 0, 0); */
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 4vw;
+    font-weight: 900;
+    letter-spacing: .1vw;
+}
+.title_section p:nth-child(1){
+    color: #f9cf26;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+}
+.title_section p:nth-child(1) span{
+    color: #f9cf26;
+    font-size: 4vw;
+    /* border: 2px solid black; */
+    position: relative;
+    bottom: -.5vw;
+}
+.right_section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: .4vw solid black; */
+    padding: 5vw 14vw;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 22vw;
+    height: fit-content;
+    padding: 3vw 0;
+    border: .3vw solid rgb(0, 0, 0);
+    border-radius: 1.2vw;
+    gap: 4vw;
+    cursor: pointer;
+}
+.box:hover ,.inputbox input:hover
+{
+    border: .3vw solid rgb(255, 231, 97);
+    background-color:rgba(255, 253, 165, 0.254) ; 
+    box-shadow: 0 0 2vw rgb(255, 241, 84); 
+    transition: 0.5s;
+}
+.inputbox {
+    position: relative;
+    width: 18vw; 
+}
+.inputbox input {
+    width: 100%;
+    padding: .6vw;
+    border: .3vw solid rgb(0, 0, 0);
+    /* background-color: #080a12 ; */
+    background: transparent;
+    border-radius: .4vw;
+    outline: none ;
+    color: rgb(0, 0, 0);
+    font-size: .8vw;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.inputbox input:valid ,.inputbox input:focus 
+{
+    border: .3vw solid rgb(255, 218, 7); 
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: .6vw;
+    pointer-events: none;
+    font-size: 1vw;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    transition: 0.5s;
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+    color: rgb(0, 0, 0);
+    transform: translateX(1vw) translateY(-.3vw);
+    font-size: .5vw;
+    padding: 0 .4vw;
+    background-color: #fff9c0;
+    border-left: .15vw solid rgb(255, 218, 7);
+    border-right: .15vw solid rgb(255, 218, 7);
+    letter-spacing: .1vw;
+}
+.inputbox:nth-child(2) input:focus ~ span,
+.inputbox:nth-child(2) input:valid ~ span
+{
+    background-color: rgb(255, 218, 7) ;
+    color: #000000 ;
+    padding-top :.2vw;
+}
+
+.social_logo_section{
+    /* border: .2vw solid rgb(0, 255, 64) ; */
+    width: 17vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5vw;
+    align-items: center;
+}
+.social_logo_section a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+    transition: all 0.5s ease 0.02s;
+}
+
+.social_logo_section a:hover{
+    color: rgb(255, 225, 0);
+    font-size: 4.4vw ;
+    text-shadow: 0 0 20px rgb(255, 231, 51); 
+    transition: all 0.5s ease 0.02s;
+}
+
+
+
+.send-button {
+    border: .28vw solid  rgb(0, 0, 0);
+    background-color: transparent ;
+    padding: .4vw 0;
+    border-radius: .6vw;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    width: 7vw;
+    text-align: center;
+    margin-left: -10.5vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.send-button:hover{
+    /* background-color: rgb(255, 218, 7) ; */
+    border: .28vw  solid rgb(255, 218, 7);
+    color:  rgb(255, 218, 7);
+}
+.send-button:active{
+    background-color: rgb(255, 218, 7) ;
+    border: .28vw  solid rgb(255, 218, 7);
+    color: black;
 }
